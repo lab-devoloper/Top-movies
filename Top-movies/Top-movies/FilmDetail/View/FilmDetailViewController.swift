@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FilmDetailViewController.swift
 //  Top-movies
 //
 //  Created by Ivan Mihailovskii on 29/10/2018.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FilmDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
-
-
 }
-
