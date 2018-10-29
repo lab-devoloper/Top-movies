@@ -28,10 +28,6 @@ class FilmListViewController: UIViewController, FilmListViewControllerInputProto
     func reloadTableView() {
         self.tableView.reloadData()
     }
-    
-    func loadingView() {
-        //
-    }
 }
 
 extension FilmListViewController: UITableViewDelegate {

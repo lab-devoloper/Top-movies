@@ -15,12 +15,6 @@ class FilmListPresenter: FilmListViewControllerOutputProtocol {
     var router: FilmListRouterProtocol?
     private var filmArray = [[FilmObject]]()
     
-    var isLoading: Bool! = false {
-        didSet {
-            self.view?.loadingView()
-        }
-    }
-    
     func updateFilm() {
         self.service?.updateFilmList { (response) in
             

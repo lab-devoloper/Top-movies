@@ -7,7 +7,5 @@
 //
 
 protocol FilmListViewControllerInputProtocol: class {
-    
     func reloadTableView()
-    func loadingView()
 }

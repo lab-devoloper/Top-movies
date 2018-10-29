@@ -9,7 +9,6 @@ import Foundation
 
 protocol FilmListViewControllerOutputProtocol {
     
-    var isLoading: Bool! {get}
     var router: FilmListRouterProtocol? {get}
     func updateFilm()
     func didSelect(indexPath: IndexPath)
