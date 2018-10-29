@@ -60,5 +60,7 @@ class FilmListPresenter: FilmListViewControllerOutputProtocol {
                 tempArray.append(object)
             }
         }
+        
+        self.filmArray.append(tempArray)
     }
 }
