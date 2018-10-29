@@ -26,6 +26,9 @@ class FilmListRouter: FilmListRouterProtocol {
     
     func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        if let filmDetailViewController = segue.destination as? FilmDetailViewController {
+            filmDetailViewController.configurator = FilmDetailConfigurator(film: self.film ?? FilmObject(json: [:]))
+        }
     }
     
     

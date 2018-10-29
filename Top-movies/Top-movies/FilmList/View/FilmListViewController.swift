@@ -22,7 +22,7 @@ class FilmListViewController: UIViewController, FilmListViewControllerInputProto
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       // self.presenter.router.prepare(for: segue, sender: sender)
+        self.presenter.router?.prepare(for: segue, sender: sender)
     }
     
     func reloadTableView() {

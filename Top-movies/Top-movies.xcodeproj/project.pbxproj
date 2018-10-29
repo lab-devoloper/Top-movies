@@ -27,6 +27,11 @@
 		6A1FFE06218737A8000391A9 /* FilmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A1FFE04218737A8000391A9 /* FilmTableViewCell.xib */; };
 		6A1FFE0821875A6F000391A9 /* FilmListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1FFE0721875A6F000391A9 /* FilmListRouter.swift */; };
 		6A1FFE0D21875F41000391A9 /* FilmDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1FFE0C21875F41000391A9 /* FilmDetailViewController.swift */; };
+		6A1FFE0F21876619000391A9 /* FilmDetailConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1FFE0E21876619000391A9 /* FilmDetailConfiguratorProtocol.swift */; };
+		6A1FFE1121876660000391A9 /* FilmDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1FFE1021876660000391A9 /* FilmDetailConfigurator.swift */; };
+		6A1FFE142187684A000391A9 /* FilmDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1FFE132187684A000391A9 /* FilmDetailPresenter.swift */; };
+		6A1FFE16218768AC000391A9 /* FilmDetailViewControllerInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1FFE15218768AC000391A9 /* FilmDetailViewControllerInputProtocol.swift */; };
+		6A1FFE18218768D6000391A9 /* FilmDetailViewControllerOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1FFE17218768D6000391A9 /* FilmDetailViewControllerOutputProtocol.swift */; };
 		FA03EBA235490CD05B670E86 /* Pods_Top_movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5AA10528267E569DD871780 /* Pods_Top_movies.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +60,11 @@
 		6A1FFE04218737A8000391A9 /* FilmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmTableViewCell.xib; sourceTree = "<group>"; };
 		6A1FFE0721875A6F000391A9 /* FilmListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListRouter.swift; sourceTree = "<group>"; };
 		6A1FFE0C21875F41000391A9 /* FilmDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewController.swift; sourceTree = "<group>"; };
+		6A1FFE0E21876619000391A9 /* FilmDetailConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		6A1FFE1021876660000391A9 /* FilmDetailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailConfigurator.swift; sourceTree = "<group>"; };
+		6A1FFE132187684A000391A9 /* FilmDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailPresenter.swift; sourceTree = "<group>"; };
+		6A1FFE15218768AC000391A9 /* FilmDetailViewControllerInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewControllerInputProtocol.swift; sourceTree = "<group>"; };
+		6A1FFE17218768D6000391A9 /* FilmDetailViewControllerOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewControllerOutputProtocol.swift; sourceTree = "<group>"; };
 		A5AA10528267E569DD871780 /* Pods_Top_movies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Top_movies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -209,6 +219,8 @@
 		6A1FFE0921875EDF000391A9 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
+				6A1FFE0E21876619000391A9 /* FilmDetailConfiguratorProtocol.swift */,
+				6A1FFE1021876660000391A9 /* FilmDetailConfigurator.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -216,6 +228,7 @@
 		6A1FFE0A21875EE8000391A9 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				6A1FFE132187684A000391A9 /* FilmDetailPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -224,6 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				6A1FFE0C21875F41000391A9 /* FilmDetailViewController.swift */,
+				6A1FFE15218768AC000391A9 /* FilmDetailViewControllerInputProtocol.swift */,
+				6A1FFE17218768D6000391A9 /* FilmDetailViewControllerOutputProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -372,14 +387,19 @@
 			files = (
 				6A1FFDEF2186FEB7000391A9 /* FilmObject.swift in Sources */,
 				6A1FFDD32186EE22000391A9 /* FilmListViewController.swift in Sources */,
+				6A1FFE0F21876619000391A9 /* FilmDetailConfiguratorProtocol.swift in Sources */,
+				6A1FFE1121876660000391A9 /* FilmDetailConfigurator.swift in Sources */,
 				6A1FFDD12186EE22000391A9 /* AppDelegate.swift in Sources */,
 				6A1FFE0D21875F41000391A9 /* FilmDetailViewController.swift in Sources */,
 				6A1FFE0121871717000391A9 /* FilmListRouterProtocol.swift in Sources */,
 				6A1FFDF9218712BC000391A9 /* FilmListViewControllerInitializer.swift in Sources */,
 				6A1FFE0821875A6F000391A9 /* FilmListRouter.swift in Sources */,
 				6A1FFDF42187123C000391A9 /* FilmListViewControllerOutputProtocol.swift in Sources */,
+				6A1FFE16218768AC000391A9 /* FilmDetailViewControllerInputProtocol.swift in Sources */,
+				6A1FFE18218768D6000391A9 /* FilmDetailViewControllerOutputProtocol.swift in Sources */,
 				6A1FFDF621871250000391A9 /* FilmListViewControllerInputProtocol.swift in Sources */,
 				6A1FFE05218737A8000391A9 /* FilmTableViewCell.swift in Sources */,
+				6A1FFE142187684A000391A9 /* FilmDetailPresenter.swift in Sources */,
 				6A1FFDFE218715E4000391A9 /* FilmListPresenter.swift in Sources */,
 				6A1FFDE82186F55F000391A9 /* NetworkProtocol.swift in Sources */,
 				6A1FFDF121870104000391A9 /* FilmListService.swift in Sources */,

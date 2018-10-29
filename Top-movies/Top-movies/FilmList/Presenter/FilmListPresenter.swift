@@ -12,8 +12,8 @@ class FilmListPresenter: FilmListViewControllerOutputProtocol {
 
     weak var view: FilmListViewControllerInputProtocol?
     var service: FilmListServiceProtocol?
-    internal var router: FilmListRouterProtocol?
-    var filmArray = [[FilmObject]]()
+    var router: FilmListRouterProtocol?
+    private var filmArray = [[FilmObject]]()
     
     var isLoading: Bool! = false {
         didSet {
