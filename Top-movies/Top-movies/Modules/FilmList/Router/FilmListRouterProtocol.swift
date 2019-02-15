@@ -11,5 +11,4 @@ import UIKit
 protocol FilmListRouterProtocol {
     
     func presentDetailView(for film: FilmObject)
-    func prepare(for segue: UIStoryboardSegue, sender: Any?)
 }

@@ -21,10 +21,6 @@ class FilmListViewController: UIViewController, FilmListViewControllerInputProto
         self.presenter.updateFilm()
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        self.presenter.router?.prepare(for: segue, sender: sender)
-    }
-    
     func reloadTableView() {
         self.tableView.reloadData()
     }

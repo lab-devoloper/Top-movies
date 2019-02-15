@@ -10,26 +10,21 @@ import Foundation
 import UIKit
 
 class FilmListRouter: FilmListRouterProtocol {
-
+    
+    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    }
+    
     weak var filmListViewController: FilmListViewController?
-    var film: FilmObject?
     
     init(filmListViewController: FilmListViewController) {
         self.filmListViewController = filmListViewController
     }
     
     func presentDetailView(for film: FilmObject) {
-        
-        self.film = film
-        self.filmListViewController?.performSegue(withIdentifier: "FilmDetailControllerSeque", sender: nil)
+
+        self.filmListViewController?.pushToController(viewController: FilmDetailViewController(), completion: { (vc) in
+            vc.configurator = FilmDetailConfigurator(film: film)
+        })
     }
-    
-    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if let filmDetailViewController = segue.destination as? FilmDetailViewController {
-            filmDetailViewController.configurator = FilmDetailConfigurator(film: self.film ?? FilmObject(json: [:]))
-        }
-    }
-    
-    
 }

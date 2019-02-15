@@ -32,6 +32,8 @@
 		6A1FFE142187684A000391A9 /* FilmDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1FFE132187684A000391A9 /* FilmDetailPresenter.swift */; };
 		6A1FFE16218768AC000391A9 /* FilmDetailViewControllerInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1FFE15218768AC000391A9 /* FilmDetailViewControllerInputProtocol.swift */; };
 		6A1FFE18218768D6000391A9 /* FilmDetailViewControllerOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1FFE17218768D6000391A9 /* FilmDetailViewControllerOutputProtocol.swift */; };
+		9175214A2215743300324CB0 /* FilmDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917521492215743300324CB0 /* FilmDetailViewController.storyboard */; };
+		9175214D221577C700324CB0 /* TMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175214C221577C700324CB0 /* TMViewController.swift */; };
 		FA03EBA235490CD05B670E86 /* Pods_Top_movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5AA10528267E569DD871780 /* Pods_Top_movies.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		6A1FFE132187684A000391A9 /* FilmDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailPresenter.swift; sourceTree = "<group>"; };
 		6A1FFE15218768AC000391A9 /* FilmDetailViewControllerInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewControllerInputProtocol.swift; sourceTree = "<group>"; };
 		6A1FFE17218768D6000391A9 /* FilmDetailViewControllerOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewControllerOutputProtocol.swift; sourceTree = "<group>"; };
+		917521492215743300324CB0 /* FilmDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilmDetailViewController.storyboard; sourceTree = "<group>"; };
+		9175214C221577C700324CB0 /* TMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMViewController.swift; sourceTree = "<group>"; };
 		A5AA10528267E569DD871780 /* Pods_Top_movies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Top_movies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,8 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				6A1FFDED2186FE9C000391A9 /* Model */,
-				6A1FFDE62186F51A000391A9 /* FilmDetail */,
-				6A1FFDE52186F508000391A9 /* FilmList */,
+				9175214B2215773000324CB0 /* Extension */,
+				91752145221573CC00324CB0 /* Modules */,
 				6A1FFDE42186EF8C000391A9 /* Services */,
 				6A1FFDE32186EF7E000391A9 /* CoreLayer */,
 				6A1FFDE22186EF4E000391A9 /* Supporting Files */,
@@ -237,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				6A1FFE0C21875F41000391A9 /* FilmDetailViewController.swift */,
+				917521492215743300324CB0 /* FilmDetailViewController.storyboard */,
 				6A1FFE15218768AC000391A9 /* FilmDetailViewControllerInputProtocol.swift */,
 				6A1FFE17218768D6000391A9 /* FilmDetailViewControllerOutputProtocol.swift */,
 			);
@@ -249,6 +254,23 @@
 				A5AA10528267E569DD871780 /* Pods_Top_movies.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91752145221573CC00324CB0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6A1FFDE62186F51A000391A9 /* FilmDetail */,
+				6A1FFDE52186F508000391A9 /* FilmList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9175214B2215773000324CB0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9175214C221577C700324CB0 /* TMViewController.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		C28F55AF7B5A485B71FFEA86 /* Pods */ = {
@@ -321,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A1FFDDB2186EE26000391A9 /* LaunchScreen.storyboard in Resources */,
+				9175214A2215743300324CB0 /* FilmDetailViewController.storyboard in Resources */,
 				6A1FFE06218737A8000391A9 /* FilmTableViewCell.xib in Resources */,
 				6A1FFDD82186EE26000391A9 /* Assets.xcassets in Resources */,
 				6A1FFDD62186EE22000391A9 /* Main.storyboard in Resources */,
@@ -360,7 +383,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Top-movies/Pods-Top-movies-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Top-movies/Pods-Top-movies-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -375,7 +398,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Top-movies/Pods-Top-movies-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Top-movies/Pods-Top-movies-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -401,6 +424,7 @@
 				6A1FFE05218737A8000391A9 /* FilmTableViewCell.swift in Sources */,
 				6A1FFE142187684A000391A9 /* FilmDetailPresenter.swift in Sources */,
 				6A1FFDFE218715E4000391A9 /* FilmListPresenter.swift in Sources */,
+				9175214D221577C700324CB0 /* TMViewController.swift in Sources */,
 				6A1FFDE82186F55F000391A9 /* NetworkProtocol.swift in Sources */,
 				6A1FFDF121870104000391A9 /* FilmListService.swift in Sources */,
 				6A1FFDEA2186F58C000391A9 /* NetworkClient.swift in Sources */,
@@ -553,7 +577,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FD2PE35M99;
+				DEVELOPMENT_TEAM = 4XJM4GSZPH;
 				INFOPLIST_FILE = "Top-movies/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -572,7 +596,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FD2PE35M99;
+				DEVELOPMENT_TEAM = 4XJM4GSZPH;
 				INFOPLIST_FILE = "Top-movies/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
